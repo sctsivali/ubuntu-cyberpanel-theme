@@ -1,0 +1,141 @@
+/*
+    Name: Ubuntu Inspired Theme v1
+    Version: 1.0
+    Author: Sivali Cloud Technology
+    Tested on CyberPanel 2.3 build 2
+    Served with APACHE-2.0 license
+    - CyberPanel repo: https://github.com/usmannasir/cyberpanel/
+    /usr/local/CyberCP/public/static/emailMarketing  <-admin icons here
+    /usr/local/CyberCP/public/static/images/icons    <- main icons here
+    /usr/local/CyberCP/public/static/baseTemplate/assets/image-resources   <- admin logo goes here
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+#header-logo .logo-content-big, .logo-content-small {
+    background: url('https://assets.ubuntu.com/v1/594d0a0c-Canonical%20Ubuntu%20Dark.svg') left 50% no-repeat;
+    text-indent: -999em;
+    position: absolute;
+    height: 47px;
+    width: 190px;
+    left: 10px;
+    top: 40%;
+    margin-top: -17px;
+}
+
+:root {
+    --ubuntu-orange: #E95420;
+    --ubuntu-orange-light: #F47622;
+    --ubuntu-white: #FFFFFF;
+    --ubuntu-black: #000000;
+    --ubuntu-border: #D5D5D5;
+    --ubuntu-bg-light: #F2F2F2;
+}
+
+textarea {
+    font-family: "Ubuntu", sans-serif;
+}
+
+#sidebar-menu-item-server-ip-address span {
+    color: var(--ubuntu-orange) !important;
+    font-weight: 400 !important;
+}
+
+#sidebar-menu-item-server-ip-address span:before {
+    content: "Logged at ";
+}
+
+h1, h2, h3, h4, h5, h6,
+#page-title > h2,
+#page-title > p {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 600;
+}
+
+.btn:not(.toggle) {
+    border-width: 0px;
+}
+
+.btn-primary {
+    border-width: 0px;
+    background-color: var(--ubuntu-orange);
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active:focus {
+    background: var(--ubuntu-orange-light);
+    background-color: var(--ubuntu-orange-light);
+}
+
+.btn-primary:active {
+    background-color: var(--ubuntu-orange);
+}
+
+#header-nav-right .header-btn {
+    border-color: rgba(0, 0, 0, 0.2);
+}
+
+#header-nav-right .header-btn:hover {
+    border-color: var(--ubuntu-orange);
+}
+
+#header-nav-right .header-btn i {
+    color: var(--ubuntu-black) !important;
+}
+
+#page-header {
+    background: var(--ubuntu-white);
+}
+
+.sidebar-submenu {
+    margin: 0px !important;
+}
+
+.sidebar-submenu li {
+    background-color: var(--ubuntu-orange-light);
+    list-style: none;
+}
+
+#page-sidebar li ul li a:before {
+    display: none !important;
+}
+
+#sidebar-menu li .sidebar-submenu ul li a:hover, #sidebar-menu li .sidebar-submenu ul li a.sfActive {
+    background-color: var(--ubuntu-orange);
+}
+
+#sidebar-menu li .sidebar-submenu ul li, #sidebar-menu li .sidebar-submenu {
+    border-width: 0px;
+}
+
+#sidebar-menu, #header-logo {
+    background: var(--ubuntu-black);
+    padding: 0;
+}
+
+#sidebar-menu > li > a, #page-sidebar li ul li a {
+    font-family: "Ubuntu", sans-serif;
+    border-width: 0;
+    color: var(--ubuntu-white) !important;
+    padding: 0px 15px;
+    font-size: 14px;
+}
+
+#page-sidebar ul li.header {
+    color: var(--ubuntu-white) !important;
+    padding: 20px 15px;
+    margin: 0;
+    border-top: 1px solid var(--ubuntu-orange);
+    font-family: "Ubuntu", sans-serif;
+}
+
+#page-sidebar ul li.divider {
+    display: none;
+}
+
+#sidebar-menu > li > a:hover {
+    background-color: var(--ubuntu-orange-light);
+}
+
+#page-sidebar ul li a .glyph-icon {
+    display: none;
+}
